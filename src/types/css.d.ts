@@ -1,0 +1,8 @@
+import "react";
+
+declare module "react" {
+  interface CSSProperties {
+    "--reveal-delay"?: string;
+    "--parallax"?: string;
+  }
+}
