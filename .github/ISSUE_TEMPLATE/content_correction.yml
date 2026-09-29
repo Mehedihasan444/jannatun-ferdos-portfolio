@@ -1,0 +1,33 @@
+name: Content correction
+description: A fact on the site is wrong or incomplete
+labels: content
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for factual corrections only. Proposing new sections
+        or redesigns is better as an issue so it can be discussed first.
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: What is currently shown, and what should it be?
+      description: Quote the existing text so it is easy to locate.
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: Which section?
+      placeholder: Education, Research, Training, Achievements, Activities
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Source for the correction
+      description: A link or document that supports the new value.
+    validations:
+      required: true

@@ -1,0 +1,59 @@
+name: Bug report
+description: Something on the site is broken or incorrect
+labels: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. If the problem involves
+        personal data or security, please use the private reporting channel
+        in SECURITY.md instead of a public issue.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the actual behaviour.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Scroll to ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      placeholder: https://example.com/#research
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Where did you see this?
+      options:
+        - Desktop browser
+        - Mobile browser
+        - Both
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 131, Firefox 133, Safari 18
