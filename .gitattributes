@@ -1,0 +1,20 @@
+# Normalize line endings on checkin, convert to LF on checkout.
+* text=auto eol=lf
+
+# Keep these as LF, no matter the platform.
+*.ts text eol=lf
+*.tsx text eol=lf
+*.mjs text eol=lf
+*.css text eol=lf
+*.svg text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Binary assets: never attempt line-ending conversion.
+*.pdf binary
+*.webp binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
